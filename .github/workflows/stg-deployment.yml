@@ -2,9 +2,9 @@ name: Flutter Deployment
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches: [ "staging"]
+  # pull_request:
+  #   branches: [ "master" ]
 
 jobs:
   build:
