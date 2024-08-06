@@ -54,3 +54,8 @@ jobs:
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} $NEW_TAG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Use DEV Environment Secret
+        run: echo "${{ secrets.DEV_SECRET }}"
+        env:
+          DEV_SECRET: ${{ secrets.DEV_SECRET }}
